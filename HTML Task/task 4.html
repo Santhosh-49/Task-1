@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Forms</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+
+    form {
+      max-width: 300px;
+      margin: 0 auto;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 8px;
+    }
+
+    input[type="submit"] {
+      background-color: #4caf50;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <label>Gender:</label>
+    <label><input type="radio" name="gender" value="male"> Male</label>
+    <label><input type="radio" name="gender" value="female"> Female</label>
+    <label><input type="checkbox" name="subscribe" checked> Subscribe to newsletter</label>
+    <label for="country">States:</label>
+    <select id="country" name="country">
+      <option value="usa">Tamil Nadu</option>
+      <option value="canada">Karnataka</option>
+      <option value="uk">Kerala </option>
+    </select>
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+    <input type="submit" value="Submit">
+    <button name="button" onclick="alert('The facebook user')">Visit Facebook</button>
+    <button name="button" onclick="alert('The facebook user')">Visit Twitter</button>
+    <button name="button" onclick="alert('The facebook user')">Visit instagram</button>
+  </form>
+
+</body>
+</html>
